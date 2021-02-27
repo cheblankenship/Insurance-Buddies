@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const express   = require("express");
 const app       = express();
 const server    = require('http').createServer(app);
@@ -29,3 +30,6 @@ app.get('/', function(req, res) {
 server.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 })
+=======
+console.log('heoouyguy');
+>>>>>>> d2abb4ce5727d63afabca4084bec952f5fb2d0db

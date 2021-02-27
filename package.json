@@ -1,0 +1,23 @@
+{
+  "name": "insurance-buddies",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PugNorange/Insurance-Buddies.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PugNorange/Insurance-Buddies/issues"
+  },
+  "homepage": "https://github.com/PugNorange/Insurance-Buddies#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  }
+}

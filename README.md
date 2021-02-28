@@ -55,25 +55,25 @@ The group rules menu displays custom rules made from the group regarding their j
 ## Installation
 1. Clone the repo.
 
-... `$ git clone https://github.com/PugNorange/Insurance-Buddies.git`
+...`$ git clone https://github.com/PugNorange/Insurance-Buddies.git`
 
 2. Check node.js is installed.
 
-... `$ node -v`
+...`$ node -v`
 
 3. Check npm version.
 
-... `$ npm -v`
+...`$ npm -v`
 
 4. Install `npm` libraries.
 
-... All the npm libraries used for this project is saved in package.json.
+...All the npm libraries used for this project is saved in package.json.
 
-... `$ npm install [library name]`
+...`$ npm install [library name]`
 
 5. Run the project on `http://localhost:3000/`
 
-... `$ node app.js` or `$ nodemon app.js`
+...`$ node app.js` or `$ nodemon app.js`
 
 6. Open `http://localhost:3000/` in your browser.
 

@@ -5,6 +5,7 @@ const server    = require('http').createServer(app);
 const path      = require("path");
 const fs        = require("fs");
 const port      = 3000;
+const axios     = require('axios');
 
 
 
@@ -21,6 +22,13 @@ app.set("view engine", "ejs");
 // main page
 app.get('/', function(req, res) {
   console.log('Hello');
+  axios.get('http://api.nessieisreal.com/atms?lat=38.9283&lng=-77.1753&rad=1&key=bd9e719a5ca27b4da145879542172042')
+    .then(response => {
+      console.log(response);
+    })
+    .catch(error => {
+      console.log(error);
+    });
     // render the main page
 
     res.render("group",{

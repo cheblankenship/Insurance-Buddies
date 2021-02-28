@@ -19,17 +19,53 @@ The group rules menu displays custom rules made from the group regarding their j
 
 
 ## Memebers
-* Teja Makthala
-... Worked on back-end using Node.js. In addition, worked on rendering queried data on front-end using ejs engine.
+* __Teja Makthala__
+... Worked on back-end using Node.js. In addition, worked on rendering queried data on front-end using ejs engine. Tested the entire API documentation. Contributed to the architecture designing specifically on micro-service for financial transaction.
 
-* Eric Cutherell
-... Worked on back-end using Node.js. Tested the Capital-One API return cases to make sure the APIs that the customer use are uptodate. Also worked on organizing git branch Contribution.
+* __Eric Cutherell__
+... Worked on back-end using Node.js. Tested the Capital-One API return cases to make sure the APIs that the customer use are up to date. Also worked on organizing git branch contribution.
 
-* Jeffrey Byland
-... Worked on implementing the frint-end code and design. Integerated the HTML/CSS files into ejs files so the express can render data dynamiclly on user-interface.
+* __Jeffrey Byland__
+... Worked on implementing the front-end code and design. Integrated the HTML/CSS files into ejs files so the express can render data dynamically on user-interface.
 
-* Che Blankenship
-... Worked on designing the architecture. Handled the git merge issues. Built the basic stack architecture for the project.
+* __Che Blankenship__
+... Worked on designing the architecture. Handled the git merge issues. Built the architecture for the project. Tested the whole Capital-One API. Worked on mock data for running the finincial transaction cases. Worked on API calls for back-end (Node.js) and front-end (ajax).
+
+## File structure
+| node_modules
+| public -
+|       |- css
+|       |- img - styles.css
+|       |- js - index.js
+|
+| views -
+|       |- group.ejs
+|       |- request.ejs
+|       |- rules.ejs
+|       |- user.ejs
+|
+| .gitignore
+| app.js
+| config.js
+| package.json
+|
+
+
+
+## Installation
+1. Clone the repo.
+... `$ git clone https://github.com/PugNorange/Insurance-Buddies.git`
+2. Check node.js is installed.
+... `$ node -v`
+3. Check npm version.
+... `$ npm -v`
+4. Install `npm` libraries.
+... All the npm libraries used for this project is saved in package.json.
+... `$ npm install [library name]`
+5. Run the project on `http://localhost:3000/`
+... `$ node app.js` or `$ nodemon app.js`
+6. Open `http://localhost:3000/` in your browser.
+
 
 
 ## API Calls
@@ -79,9 +115,9 @@ function clicked() {
   // console.log("account name >> ", accountName.value);
   var amountInt = parseInt(amount.value);
   console.log("amount >> ", amountInt);
-  var savingAccount = "603b0e094a4a8605712848dd";
+  var savingAccount = "[account_id_to_transfer_money]";
 
-  var url = "http://api.nessieisreal.com/accounts/"+ savingAccount +"/transfers?key=9c938dc5d4b4b1e2841d67335f3e5553";
+  var url = "http://api.nessieisreal.com/accounts/"+ savingAccount +"/transfers?key=[api-key]";
 
   var data = {};
   data.medium = "balance";

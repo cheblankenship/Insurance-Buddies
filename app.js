@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 const express   = require("express");
 const app       = express();
 const server    = require('http').createServer(app);
@@ -21,15 +21,30 @@ app.set("view engine", "ejs");
 // main page
 app.get('/', function(req, res) {
     // render the main page
-    res.render("index",{
-        data: "Matta"
+
+    res.render("group",{
+        data: "Matydduututudttta"
     });
 });
 
+// User page
+app.get('/user', function(req, res) {
+  // render the main page
+  
+  res.render("user",{
+      data: "1000"
+  });
+});
+
+// request page
+app.get('/request', function(req, res) {
+  // render the main page
+  
+  res.render("request",{
+      data: "xfgjxfgj"
+  });
+});
 //
 server.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 })
-=======
-console.log('heoouyguy');
->>>>>>> d2abb4ce5727d63afabca4084bec952f5fb2d0db

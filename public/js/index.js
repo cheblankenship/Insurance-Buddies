@@ -2,21 +2,25 @@
 
 function clicked() {
 
+  // Get values from the from
   var accountName = document.getElementById('accountName');
   var accountId = document.getElementById('inputAccountId');
   var amount = document.getElementById('inputAmount');
 
-  console.log("account id >> ", accountId.value);
+  // convert values into neccesary type
+  var accountIdValue = accountId.value;
+  console.log("account id >> ", accountId);
   // console.log("account name >> ", accountName.value);
-  console.log("amount >> ", amount.value);
+  var amountInt = parseInt(amount.value);
+  console.log("amount >> ", amountInt);
   var savingAccount = "603b0e094a4a8605712848dd";
 
   var url = "http://api.nessieisreal.com/accounts/"+ savingAccount +"/transfers?key=9c938dc5d4b4b1e2841d67335f3e5553";
 
   var data = {};
   data.medium = "balance";
-  data.payee_id  = accountId;
-  data.amount = amount;
+  data.payee_id  = accountIdValue;
+  data.amount = amountInt;
   data.transaction_date = "2021-02-28";
   data.status = "completed";
   data.description = "optional string";

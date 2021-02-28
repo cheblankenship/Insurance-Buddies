@@ -4,7 +4,7 @@ const app       = express();
 const server    = require('http').createServer(app);
 const path      = require("path");
 const fs        = require("fs");
-const port      = 3000 || process.env.PORT;
+const port      = process.env.PORT;
 const axios     = require('axios');
 
 

@@ -21,7 +21,6 @@ app.set("view engine", "ejs");
 
 // main page
 app.get('/', function(req, res) {
-  console.log('Hello');
   axios.get('http://api.nessieisreal.com/accounts/603b0e094a4a8605712848dd?key=9c938dc5d4b4b1e2841d67335f3e5553')
     .then(response => {
       console.log(response.data.balance);

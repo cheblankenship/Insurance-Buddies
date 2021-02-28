@@ -44,6 +44,16 @@ app.get('/request', function(req, res) {
       data: "xfgjxfgj"
   });
 });
+
+// rules page
+app.get('/rules', function(req, res) {
+  // render the main page
+  
+  res.render("rules",{
+      data: "xfgjxfgj"
+  });
+});
+
 //
 server.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)

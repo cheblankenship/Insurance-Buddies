@@ -5,21 +5,21 @@
   }
   
   h1 {
-    color: #426696;
+    color: #2c466d;
     font-weight: 600;
     font-size: 3rem;
     opacity: 0.8;
   }
   h2,
   p, a {
-    color: #658ec6;
+    color: #5d5c61;
     font-weight: 500;
     opacity: 0.8;
     text-decoration: none;
   }
   
   h3 {
-    color: #426696;
+    color: #5d5c61;
     font-weight: 600;
     opacity: 0.8;
   }
@@ -27,7 +27,7 @@
   main {
     font-family: "Poppins", sans-serif;
     min-height: 100vh;
-    background: linear-gradient(to right top, #82b2fa, #6cebe1);
+    background: linear-gradient(to right top, #7395ae, #557a95);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -42,33 +42,14 @@
       rgba(255, 255, 255, 0.7),
       rgba(255, 255, 255, 0.3)
     );
-    border-radius: 2rem;
+    border-radius: 1rem;
     z-index: 2;
     backdrop-filter: blur(2rem);
     display: flex;
   }
-  .circle1,
-  .circle2 {
-    background: white;
-    background: linear-gradient(
-      to right bottom,
-      rgba(255, 255, 255, 0.8),
-      rgba(255, 255, 255, 0.3)
-    );
-    height: 20rem;
-    width: 20rem;
-    position: absolute;
-    border-radius: 50%;
-  }
+ 
   
-  .circle1 {
-    top: 5%;
-    right: 15%;
-  }
-  .circle2 {
-    bottom: 5%;
-    left: 10%;
-  }
+
   .dashboard {
     flex: 1;
     display: flex;
@@ -81,14 +62,20 @@
       rgba(255, 255, 255, 0.7),
       rgba(255, 255, 255, 0.3)
     );
-    border-radius: 2rem;
+    border-radius: 1rem;
   }
   .link {
     background-color: white;
+    box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+    border-radius: 1rem;
     display: flex;
-    margin: 2rem 1rem;
+    margin: 2rem 2rem;
     padding: 1rem 5rem;
     align-items: center;
+  }
+  .link img {
+    width: 50px;
+
   }
   .link h2 {
     padding: 0rem 2rem;
@@ -99,11 +86,12 @@
   }
   
   .pro {
-    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
-    border-radius: 2rem;
+    background: linear-gradient(to right top, #7395ae, #809eb4);
+    border-radius: 1rem;
     color: white;
-    padding: 1rem;
+    padding: 2rem 1rem;
     position: relative;
+    width: 70%;
   }
   
   .pro img {
@@ -116,11 +104,12 @@
     width: 60%;
     color: white;
     font-weight: 600;
+    padding-right: 20px;
   }
   
-  /* GAMES */
+  /* users list */
   .status {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
   
   .status input {
@@ -133,10 +122,11 @@
     width: 50%;
     padding: 0.5rem;
     border-radius: 2rem;
+    box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
   }
   
   .games {
-    margin: 5rem;
+    margin: 2rem 4rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -150,7 +140,7 @@
       rgba(255, 255, 255, 0.5)
     );
     border-radius: 1rem;
-    margin: 2rem 0rem;
+    margin: 1rem 0rem;
     padding: 2rem;
     box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
     justify-content: space-between;
@@ -160,10 +150,15 @@
     height: 100px;
     border-radius: 10%;
     margin-left: 5%;
+    margin-right: 5%;
   }
   
+  .card-info {
+    width: 60%;
+  }
+
   .progress {
-    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    background: linear-gradient(to right top, #7395ae, #80a6c2);
     width: 100%;
     height: 25%;
     border-radius: 1rem;
@@ -180,7 +175,7 @@
   }
 
   .progress2 {
-    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    background: linear-gradient(to right top, #7395ae, #80a6c2);
     width: 100%;
     height: 25%;
     border-radius: 1rem;
@@ -197,7 +192,7 @@
   }
 
   .progress3 {
-    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    background: linear-gradient(to right top, #7395ae, #80a6c2);
     width: 100%;
     height: 25%;
     border-radius: 1rem;
@@ -221,7 +216,25 @@
   
   .percentage {
     font-weight: bold;
-    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    background: linear-gradient(to right top, #2c466d, #6482af);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+
+  .button {
+    background-color: #2c466d; 
+    border-radius: 1rem;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 50%;
+    box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+  }
+  
+  .amendment {
+    color: #b90000;
   }

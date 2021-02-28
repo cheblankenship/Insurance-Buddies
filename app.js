@@ -22,27 +22,49 @@ app.set("view engine", "ejs");
 // main page
 app.get('/', function(req, res) {
   console.log('Hello');
-  axios.get('http://api.nessieisreal.com/atms?lat=38.9283&lng=-77.1753&rad=1&key=bd9e719a5ca27b4da145879542172042')
+  axios.get('http://api.nessieisreal.com/accounts/603b0e094a4a8605712848dd?key=9c938dc5d4b4b1e2841d67335f3e5553')
     .then(response => {
-      console.log(response);
+      console.log(response.data.balance);
+      var amount = response.data.balance.toString();
+      res.render("group",{
+          data: amount
+      });
     })
     .catch(error => {
       console.log(error);
     });
     // render the main page
 
-    res.render("group",{
-        data: "Matydduututudttta"
-    });
+
 });
 
 // User page
-app.get('/user', function(req, res) {
-  // render the main page
+app.get('/user/:account_id', function(req, res) {
+  // render the main pa
+  var dynamicName;
+  var balance;
+  var account_id = req.param("account_id");
+  console.log("req >> ", account_id);
+  var url = "http://api.nessieisreal.com/accounts/" + account_id + "?key=9c938dc5d4b4b1e2841d67335f3e5553"
+  axios.get(url)
+    .then(response => {
+      console.log(response.data.balance);
+      balance = response.data.balance
+      console.log(typeof balance);
+      dynamicName = response.data.nickname;
+      console.log(typeof dynamicName);
 
-  res.render("user",{
-      data: "1000"
-  });
+      res.render("user",{
+          data: balance,
+          name: dynamicName
+      });
+
+    })
+    .catch(error => {
+      console.log(error);
+    });
+
+
 });
 
 // request page
@@ -57,7 +79,7 @@ app.get('/request', function(req, res) {
 // rules page
 app.get('/rules', function(req, res) {
   // render the main page
-  
+
   res.render("rules",{
       data: "xfgjxfgj"
   });

@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/styles.css" />
+    <script src="./../js/index.js" charset="utf-8"></script>
   </head>
   <body>
     <main>
@@ -40,21 +41,26 @@
           </div>
         </div>
         <div class="games">
+          <form name="form" id="form" action="" method="post">
+
           <div class="status">
             <h1>Request Funds</h1>
             <p>Who is the request for?</p>
-            <input type="text" />
+            <input type="text" id="inputName" value=""/>
           </div>
           <div class="status">
             <p>Enter payout account ID:</p>
-            <input type="text" />
+            <input type="text" id="inputAccountId" value="" />
           </div>
           <div class="status">
             <p>How much do they need?</p>
-            <input type="text" />
+            <input type="text" id="inputAmount" value="" />
           </div>
-          
-          <button class="button">Submit Request</button>
+
+          <input class="button" type="button" onclick="clicked()">Submit Request</button>
+
+        </form>
+
           </div>
         </div>
       </section>

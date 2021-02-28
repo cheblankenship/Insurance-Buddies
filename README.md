@@ -33,21 +33,37 @@ The group rules menu displays custom rules made from the group regarding their j
 
 ## File structure
 | node_modules
+
 | public -
+
 |       |- css
+
 |       |- img - styles.css
+
 |       |- js - index.js
+
 |
+
 | views -
+
 |       |- group.ejs
+
 |       |- request.ejs
+
 |       |- rules.ejs
+
 |       |- user.ejs
+
 |
+
 | .gitignore
+
 | app.js
+
 | config.js
+
 | package.json
+
 |
 
 

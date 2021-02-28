@@ -31,40 +31,6 @@ The group rules menu displays custom rules made from the group regarding their j
 * __Che Blankenship__
 ... Worked on designing the architecture. Handled the git merge issues. Built the architecture for the project. Tested the whole Capital-One API. Worked on mock data for running the finincial transaction cases. Worked on API calls for back-end (Node.js) and front-end (ajax).
 
-## File structure
-| node_modules
-
-| public -
-
-|       |- css
-
-|       |- img - styles.css
-
-|       |- js - index.js
-
-|
-
-| views -
-
-|       |- group.ejs
-
-|       |- request.ejs
-
-|       |- rules.ejs
-
-|       |- user.ejs
-
-|
-
-| .gitignore
-
-| app.js
-
-| config.js
-
-| package.json
-
-|
 
 
 ## What we used
